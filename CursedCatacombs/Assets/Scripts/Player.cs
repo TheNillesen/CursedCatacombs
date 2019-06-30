@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -14,7 +15,16 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Joystick joystickRotate;
 
-    private Quaternion targetModelRotation;
+    [SerializeField]
+    private Weapon weapon;
+
+    private bool hasPressed = false;
+    private void Start()
+    {
+        weapon.Init(joystickRotate);
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -33,11 +43,20 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, Vector2.SignedAngle(Vector2.up, direction)));
         }
-        
-
+        if (direction.magnitude != 0f && direction.magnitude < 0.2f)
+        {
+            weapon.startTime = DateTime.Now;
+            hasPressed = true;
+        }
+        else if (hasPressed && direction.magnitude == 0f)
+        {
+            hasPressed = false;
+            int timeSpan = (DateTime.Now - weapon.startTime).Milliseconds;
+            if (timeSpan < 500)
+            {
+                weapon.Attack();
+            }
+        }
         transform.Translate(horizontal,vertical, 0,Space.World);
     }
-    
-
-
 }
