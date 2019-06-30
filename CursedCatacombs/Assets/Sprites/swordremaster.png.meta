@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 853eaf75d6437ce4bb5b17a658de3a49
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5412398746953532654
+    second: swordremaster_0
+  - first:
+      213: 6453106279249763675
+    second: swordremaster_1
+  - first:
+      213: 2625684781454592475
+    second: swordremaster_2
+  - first:
+      213: -6467567472132191669
+    second: swordremaster_3
+  - first:
+      213: -7489916955532570235
+    second: swordremaster_4
+  - first:
+      213: 7633011596986128408
+    second: swordremaster_5
+  - first:
+      213: 7092053606854043981
+    second: swordremaster_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +91,180 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: swordremaster_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 404
+        width: 64
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddd252a6e4bc4e46b09b83b843fb8fc
+      internalID: 5412398746953532654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 404
+        width: 64
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eafbbbd451e9584fa71637b1057e144
+      internalID: 6453106279249763675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 207
+        width: 84
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4855fbf700abbf749bb6c5a32c935fd0
+      internalID: 2625684781454592475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 205
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535a15a14889411458f5977ea458d2ee
+      internalID: -6467567472132191669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 200
+        width: 82
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f5bfc0edbf6524395a37015f117fac
+      internalID: -7489916955532570235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 10
+        width: 45
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5287ff0d53b8f4042bca0450c08b10da
+      internalID: 7633011596986128408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swordremaster_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4
+        width: 46
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1936ab4c7e833e24b8f7a1eb53296a3a
+      internalID: 7092053606854043981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

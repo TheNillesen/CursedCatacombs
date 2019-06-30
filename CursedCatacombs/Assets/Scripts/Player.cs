@@ -25,9 +25,16 @@ public class Player : MonoBehaviour
         //movement with the left joystick pad
         float vertical = joystickMove.Vertical * speed * Time.deltaTime;
         float horizontal = joystickMove.Horizontal * speed * Time.deltaTime;
+
+        Vector3 direction = new Vector3(joystickRotate.Horizontal, joystickRotate.Vertical, 0);
+
+
+        if (direction.magnitude > 0.2f)
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, Vector2.SignedAngle(Vector2.up, direction)));
+        }
         
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, Vector2.SignedAngle(Vector2.up, new Vector3( joystickRotate.Horizontal,  joystickRotate.Vertical, 0))));
-        
+
         transform.Translate(horizontal,vertical, 0,Space.World);
     }
     
